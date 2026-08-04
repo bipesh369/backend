@@ -1,0 +1,26 @@
+{
+  "name": "4.project",
+  "version": "1.0.0",
+  "description": "A backend project",
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
+  "author": "Bipesh Junior",
+  "license": "ISC",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "^3.9.6"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.1"
+  }
+}
