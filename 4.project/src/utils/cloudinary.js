@@ -1,5 +1,6 @@
 import { v2 as cloudinary } from "cloudinary"
-import fs from ""
+import fs from "node:fs"
+// import { upload } from "../middlewares/multer"
 
 
 cloudinary.config({
@@ -26,5 +27,7 @@ const uploadOnCloudinary = async (localFilePath) => {
 }
 
 
-cloudinary.v2.uploader.upload("", {public_id: "" },
+cloudinary.uploader.upload("", {public_id: "" },
   function(error, result) {console.log(result); })
+
+  export default uploadOnCloudinary
