@@ -30,7 +30,7 @@ router.route("/logout").post(
 );
 
 router.route("/refresh-token").post(
-    refreshAccessToken
+    userController.refreshAccessToken
 )
 
 export default router;
